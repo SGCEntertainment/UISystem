@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\small\\source\\repos\\UIFlipmorris\\UIFlipmorris\\UIFlipmorris.csproj",
+      "projectUniqueName": "D:\\Projects\\UISystem\\UIFlipmorris\\UIFlipmorris\\UIFlipmorris.csproj",
       "projectName": "UIFlipmorris",
-      "projectPath": "C:\\Users\\small\\source\\repos\\UIFlipmorris\\UIFlipmorris\\UIFlipmorris.csproj",
+      "projectPath": "D:\\Projects\\UISystem\\UIFlipmorris\\UIFlipmorris\\UIFlipmorris.csproj",
       "packagesPath": "C:\\Users\\small\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\small\\source\\repos\\UIFlipmorris\\UIFlipmorris\\obj\\",
+      "outputPath": "D:\\Projects\\UISystem\\UIFlipmorris\\UIFlipmorris\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\small\\AppData\\Roaming\\NuGet\\NuGet.Config",

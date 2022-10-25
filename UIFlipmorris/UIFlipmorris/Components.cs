@@ -43,7 +43,10 @@ namespace UIFlipmorris
                 SetupInit();
             }
 
-            private void Start() => StartCoroutine(nameof(Loading));
+            private void Start()
+            {
+                StartCoroutine(nameof(Loading));
+            }
 
             void SetupInit()
             {
