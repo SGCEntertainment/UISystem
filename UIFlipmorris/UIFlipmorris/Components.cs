@@ -11,7 +11,10 @@ namespace UIFlipmorris
     {
         public static Action OnGameStaretd { get; set; } = delegate { };
         public static Action OnGameRestart { get; set; } = delegate { };
+        public static Action<bool> OnGamePaused { get; set; } = delegate { };
         public static Action<string> OnGameResult { get; set; } = delegate { };
+        public static Action OnMenuPressed { get; set; } = delegate { };
+        public static Action OnLoadingFinished { get; set; } = delegate { };
     }
 
     class Components
@@ -87,6 +90,8 @@ namespace UIFlipmorris
                 pauseBtn.hideFlags = HideFlags.HideInInspector;
                 pauseBtn.OnClickEvent += () =>
                 {
+                    UISystemCallback.OnGamePaused.Invoke(true);
+
                     gameUIGo.SetActive(false);
                     pausePopupGo.SetActive(true);
                 };
@@ -97,6 +102,8 @@ namespace UIFlipmorris
                 unpauseBtn.hideFlags = HideFlags.HideInInspector;
                 unpauseBtn.OnClickEvent += () =>
                 {
+                    UISystemCallback.OnGamePaused.Invoke(false);
+
                     gameUIGo.SetActive(true);
                     pausePopupGo.SetActive(false);
                 };
@@ -107,6 +114,8 @@ namespace UIFlipmorris
                 menuBtn.hideFlags = HideFlags.HideInInspector;
                 menuBtn.OnClickEvent += () =>
                 {
+                    UISystemCallback.OnMenuPressed.Invoke();
+
                     SetupInit();
                     StartCoroutine(nameof(Loading));
                 };
@@ -169,6 +178,8 @@ namespace UIFlipmorris
 
                 loaderProgressGo.SetActive(false);
                 tapToStartGo.SetActive(true);
+
+                UISystemCallback.OnLoadingFinished.Invoke();
             }
         }
     }
