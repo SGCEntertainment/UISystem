@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "AIoz4xDUhiNQQjdJ0BdGWocoFdYl+hfkm2X+3DKFOKtU2JgaBhaZil3xkf8tUcXryyrWLz+BH4P1U1ojaNwMpA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\small\\source\\repos\\UIFlipmorris\\UIFlipmorris\\UIFlipmorris.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\small\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\small\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
