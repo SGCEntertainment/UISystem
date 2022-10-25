@@ -75,6 +75,8 @@ namespace UIFlipmorris
                 myBtn.hideFlags = HideFlags.HideInInspector;
                 myBtn.OnClickEvent += () =>
                 {
+                    UISystemCallback.OnGameStaretd.Invoke();
+
                     tapToStartGo.SetActive(false);
                     gameUIGo.SetActive(true);
                 };
@@ -167,8 +169,6 @@ namespace UIFlipmorris
 
                 loaderProgressGo.SetActive(false);
                 tapToStartGo.SetActive(true);
-
-                UISystemCallback.OnGameStaretd.Invoke();
             }
         }
     }
